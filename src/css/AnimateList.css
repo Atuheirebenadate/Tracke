@@ -1,0 +1,53 @@
+.wrapper {
+  position: relative;
+}
+
+.tab {
+  border: 2px solid #333;
+  background: #eeeeee;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.zoom {
+  transition: opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              height 0.2s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s, 
+              scale 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.initial,
+.zoom-in-start {
+  opacity: 0;
+  transform:scale(0.5);
+}
+
+.zoom-in-active .in {
+  opacity: 1;
+  transform:scale(1);
+}
+
+.zoom-out-start {
+  transform:scale(1);
+  opacity: 1;
+  height: 120px;
+}
+
+.zoom-out-active {
+  transform:scale(0.5);
+  opacity: 0;
+  height: 120px;
+}
+
+.collapse-active {
+  height: 0px;
+  opacity: 0;
+}
+
+.collapsed {
+  height: 0;
+  opacity: 0;
+}
+
+.out {
+  display: none;
+}
