@@ -34,7 +34,7 @@ class ListItem extends React.Component {
     render() {
         return (
             <li className="list-item" ref={ this.liRef }>
-                Hey, I am item number <b>{ this.props.num }</b>
+                Hey, I am  Dr.Solomon <b>{ this.props.num }</b>
             </li>
         );
     }
